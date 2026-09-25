@@ -103,6 +103,12 @@
   .btn-dark:hover{ background:var(--indigo-soft); }
   .buy-note{ margin-top:0.9rem; font-size:0.85rem; color:var(--ink-soft); }
 
+  .price-tag{ display:flex; align-items:baseline; gap:0.7rem; margin:0 0 0.6rem; flex-wrap:wrap; }
+  .price-now{ font-family:var(--font-display); font-weight:700; font-size:2.1rem; color:var(--indigo); }
+  .price-was{ font-family:var(--font-display); font-size:1.15rem; color:var(--ink-soft); text-decoration:line-through; opacity:0.7; }
+  .price-badge{ font-family:var(--font-display); font-size:0.7rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--indigo); background:var(--gold-bright); padding:0.3em 0.7em; border-radius:2px; }
+  .price-offer-note{ font-size:0.92rem; color:var(--ink-soft); margin:0 0 1.6rem; }
+
   /* ---------- FOLLOW ---------- */
   .follow{ padding:6rem 6vw; background:var(--indigo); color:var(--paper); text-align:center; }
   .follow .section-title{ color:var(--paper); }
@@ -221,8 +227,14 @@
         <li>Four simple practices you can use starting today — no background required.</li>
         <li>A short, focused read, not a 300-page commitment.</li>
       </ul>
-      <a class="btn btn-dark" href="#follow" id="buy-link">Coming Soon</a>
-      <div class="buy-note">Launching soon — follow on Instagram or YouTube to know the second it's live.</div>
+      <div class="price-tag">
+        <span class="price-now">&#8377;99</span>
+        <span class="price-was">&#8377;199</span>
+        <span class="price-badge">Launch price</span>
+      </div>
+      <p class="price-offer-note">&#8377;99 for the first batch of readers — then it goes to &#8377;199.</p>
+      <a class="btn btn-dark" href="buy.html" id="buy-link">Buy Now</a>
+      <div class="buy-note">Instant UPI checkout — you'll get your copy within a few hours of payment.</div>
     </div>
   </div>
 </section>
